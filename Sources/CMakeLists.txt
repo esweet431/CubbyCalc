@@ -10,6 +10,9 @@ include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/../Libraries
 )
 
+# Find Packages
+find_package(g3logger CONFIG REQUIRED)
+
 # Sources
 file(GLOB header_dir
     ${root_dir}/Includes)
@@ -21,7 +24,7 @@ file(GLOB_RECURSE sources
     ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp)
 
 # Build library
-add_library(${target}
+add_executable(${target}
     ${sources})
 
 # Project options
@@ -48,6 +51,8 @@ target_link_libraries(${target}
 
     INTERFACE
 )
+
+target_link_libraries(${target} PRIVATE g3logger)
 
 # Install
 install(TARGETS ${target} DESTINATION lib)

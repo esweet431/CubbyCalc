@@ -1,49 +1,31 @@
-{
-  // See https://go.microsoft.com//fwlink//?linkid=834763 for more information about this file.
+﻿{
   "configurations": [
-    {
-      "name": "x86-Debug",
-      "generator": "Ninja",
-      "configurationType": "Debug",
-      "inheritEnvironments": [ "msvc_x86" ],
-      "buildRoot": "${workspaceRoot}\\build\\${name}",
-      "installRoot": "${env.USERPROFILE}",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "-v",
-      "ctestCommandArgs": ""
-    },
-    {
-      "name": "x86-Release",
-      "generator": "Ninja",
-      "configurationType": "Release",
-      "inheritEnvironments": [ "msvc_x86" ],
-      "buildRoot": "${workspaceRoot}\\build\\${name}",
-      "installRoot": "${env.USERPROFILE}",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "-v",
-      "ctestCommandArgs": ""
-    },
     {
       "name": "x64-Debug",
       "generator": "Ninja",
       "configurationType": "Debug",
       "inheritEnvironments": [ "msvc_x64_x64" ],
-      "buildRoot": "${workspaceRoot}\\build\\${name}",
+      "buildRoot": "${workspaceRoot}\\out\\build\\${name}",
       "installRoot": "${env.USERPROFILE}",
       "cmakeCommandArgs": "",
       "buildCommandArgs": "-v",
-      "ctestCommandArgs": ""
+      "ctestCommandArgs": "",
+      "variables": []
     },
     {
-      "name": "x64-Release",
-      "generator": "Ninja",
-      "configurationType": "Release",
-      "inheritEnvironments": [ "msvc_x64_x64" ],
-      "buildRoot": "${workspaceRoot}\\build\\${name}",
-      "installRoot": "${env.USERPROFILE}",
+      "name": "WSL-GCC-Debug",
+      "generator": "Unix Makefiles",
+      "configurationType": "Debug",
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeExecutable": "/usr/bin/cmake",
       "cmakeCommandArgs": "",
-      "buildCommandArgs": "-v",
-      "ctestCommandArgs": ""
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "linux_x64" ],
+      "wslPath": "${defaultWSLPath}",
+      "addressSanitizerRuntimeFlags": "detect_leaks=0",
+      "variables": []
     }
   ]
 }
