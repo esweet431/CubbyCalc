@@ -45,14 +45,13 @@ target_compile_options(${target}
 
 target_link_libraries(${target}
     PRIVATE
+    # g3logger
 
     PUBLIC
     ${DEFAULT_LINKER_OPTIONS}
 
     INTERFACE
 )
-
-target_link_libraries(${target} PRIVATE g3logger)
 
 # Install
 install(TARGETS ${target} DESTINATION lib)

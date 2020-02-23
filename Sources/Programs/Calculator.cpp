@@ -1,7 +1,6 @@
 #include <Expressions/ExpressionMaker.hpp>
 #include <Expressions/ExpressionUtil.hpp>
 #include <Programs/Calculator.hpp>
-#include <g3log/g3log.hpp>
 
 #include <iostream>
 #include <sstream>
