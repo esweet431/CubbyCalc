@@ -11,7 +11,7 @@ include_directories(
 )
 
 # Find Packages
-find_package(g3logger CONFIG REQUIRED)
+# find_package(glog CONFIG REQUIRED)
 
 # Sources
 file(GLOB header_dir
