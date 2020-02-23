@@ -11,7 +11,7 @@ include_directories(
 )
 
 # Find Packages
-# find_package(glog CONFIG REQUIRED)
+find_package(glog CONFIG REQUIRED)
 
 # Sources
 file(GLOB header_dir
@@ -45,7 +45,7 @@ target_compile_options(${target}
 
 target_link_libraries(${target}
     PRIVATE
-    # g3logger
+    glog::glog
 
     PUBLIC
     ${DEFAULT_LINKER_OPTIONS}
