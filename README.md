@@ -1,12 +1,8 @@
 # Calculator Ver 1.03
 
-Simple Console Calculator using C++
+A fork of [Simple Console Calculator using C++](https://github.com/utilForever/CubbyCalc) by [utilForever](https://github.com/utilForever) used for a WSLconf demo.
 
-[![License](https://img.shields.io/badge/Licence-MIT-blue.svg)](https://github.com/utilForever/CubbyCalc/blob/master/LICENSE) [![Build Status](https://travis-ci.org/utilForever/CubbyCalc.svg?branch=master)](https://travis-ci.org/utilForever/CubbyCalc/branches) [![Build status](https://ci.appveyor.com/api/projects/status/github/utilForever/CubbyCalc?branch=master&svg=true)](https://ci.appveyor.com/project/utilForever/CubbyCalc/branch/master) [![Build Status](https://dev.azure.com/utilforever/CubbyCalc/_apis/build/status/utilForever.CubbyCalc)](https://dev.azure.com/utilforever/CubbyCalc/_build/latest?definitionId=2)
-
-## CodeMap
-
-![CodeMap](https://github.com/utilForever/Calculator/blob/master/CodeMap.png)
+[![License](https://img.shields.io/badge/Licence-MIT-blue.svg)](https://github.com/utilForever/CubbyCalc/blob/master/LICENSE)
 
 ## How to use
 
@@ -56,41 +52,6 @@ t=1.25
 >> E 1
 13.9997
 ```
-
-## Version History
-
-- Version 1.00
-
-    - Implement binary operator (+, -, *, /, ^)
-    - Implement unary operator (-)
-    - Implement trigonometrical function (sin, cos, tan)
-    - Implement expression tree (inheritance, polymorphism)
-    - Implement infix to postfix converter
-    - Implement variable table
-
-- Version 1.01
-
-    - Fix the bug (Recognize "sinx" as not "sin" + "x", but "sinx")
-    
-- Version 1.02
-    
-    - Constants refactoring (ExpressionMaker.cpp, ExpressionUtil.cpp → Constants.h)
-    - Create help command
-    
-- Version 1.03
-
-    - Enable to input multiple expressions (Separator: ",")     
-        - Example     
-        ```
-        >> R
-        a=1, b=2, c=3
-        >> R
-        a+b+c
-        >> E
-        6
-        ```      
-    - Remove friend class declaration (Calculator.h)
-    - 1st ExpressionTree refactoring (UnaryOperator.h/cpp, BinaryOperator.h/cpp, Operand.h/cpp)    
 
 ## License
 
