@@ -83,12 +83,12 @@ void Calculator::GetCommand()
 			if (readNumber < 1 || readNumber > m_oldExpressions.size())
 			{
 				// -1 error
-				m_expressionNumber = m_oldExpressions.size();
-				throw std::logic_error("The number is out of range");
+				m_expressionNumber = m_oldExpressions.size() - 1;
+			    throw std::logic_error("The number is out of range");
 			}
 
 			// -1 error
-			m_expressionNumber = readNumber;
+			m_expressionNumber = readNumber - 1;
 		}
 		else
 		{
