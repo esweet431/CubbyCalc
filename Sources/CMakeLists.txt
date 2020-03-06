@@ -10,8 +10,8 @@ include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/../Libraries
 )
 
-# Find Packages
-# find_package(glog CONFIG REQUIRED)
+# Find Package
+# DEMO: find_package(glog CONFIG REQUIRED)
 
 # Sources
 file(GLOB header_dir
@@ -45,7 +45,7 @@ target_compile_options(${target}
 
 target_link_libraries(${target}
     PRIVATE
-    # glog::glog
+    # DEMO: glog::glog
 
     PUBLIC
     ${DEFAULT_LINKER_OPTIONS}
