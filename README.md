@@ -1,6 +1,6 @@
 # Calculator Ver 1.03
 
-A fork of [Simple Console Calculator using C++](https://github.com/utilForever/CubbyCalc) by [utilForever](https://github.com/utilForever) used for a WSLconf demo.
+A fork of [Simple Console Calculator using C++](https://github.com/utilForever/CubbyCalc) by [utilForever](https://github.com/utilForever) used for a WSLconf and Pure Virtual C++ demo.
 
 [![License](https://img.shields.io/badge/Licence-MIT-blue.svg)](https://github.com/utilForever/CubbyCalc/blob/master/LICENSE)
 
